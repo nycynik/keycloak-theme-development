@@ -11,12 +11,14 @@ services:
       POSTGRES_DB: keycloak
       POSTGRES_USER: keycloak
       POSTGRES_PASSWORD: password
+      
   keycloak:
     image: quay.io/keycloak/keycloak:${KC_VERSION}
     command: ["start-dev", "--import-realm"]
     restart: unless-stopped
     volumes:
     - ./themes/tailwind-example/:/opt/keycloak/themes/tailwind-example/
+    - ./themes/mlg/:/opt/keycloak/themes/mlg/
     environment:
       KC_DB: postgres
       KC_DB_USERNAME: keycloak

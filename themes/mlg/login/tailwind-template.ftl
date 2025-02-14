@@ -45,33 +45,46 @@
 					<div class="border-[20px] border-transparent rounded-[20px] dark:bg-gray-900 bg-white shadow-lg xl:p-10 2xl:p-10 lg:p-10 md:p-10 sm:p-2 m-2">
 						<#nested "main">
 						<div
-            class="text-gray-500 flex text-center flex-col mt-4 items-center text-sm"
-          >
-            <p class="cursor-default">
-              By signing in, you agree to our
-              <a
-                class="group text-blue-400 transition-all duration-100 ease-in-out"
-                href="#"
-              >
-                <span
-                  class="cursor-pointer bg-left-bottom bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-                >
-                  Terms
-                </span>
-              </a>
-              and
-              <a
-                class="group text-blue-400 transition-all duration-100 ease-in-out"
-                href="#"
-              >
-                <span
-                  class="cursor-pointer bg-left-bottom bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
-                >
-                  Privacy Policy
-                </span>
-              </a>
-            </p>
-          </div>
+							class="text-gray-500 flex text-center flex-col mt-4 items-center text-sm"
+						>
+							<p class="cursor-default">
+							By signing in, you agree to our
+							<br/>
+							<a
+								class="group text-blue-400 transition-all duration-100 ease-in-out"
+								href="https://mikelynchgames.com/terms"
+							>
+								<span
+								class="cursor-pointer bg-left-bottom bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+								>
+								Terms of Service
+								</span>
+							</a>
+							, 
+							<a
+								class="group text-blue-400 transition-all duration-100 ease-in-out"
+								href="https://mikelynchgames.com/cookies"
+							>
+								<span
+								class="cursor-pointer bg-left-bottom bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+								>
+								Cookie Policy
+								</span>
+							</a>
+							, and
+							<br/>
+							<a
+								class="group text-blue-400 transition-all duration-100 ease-in-out"
+								href="https://mikelynchgames.com/privacy"
+							>
+								<span
+								class="cursor-pointer bg-left-bottom bg-gradient-to-r from-blue-400 to-blue-400 bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"
+								>
+								Privacy Policy
+								</span>
+							</a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>

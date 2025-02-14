@@ -3,8 +3,10 @@
   "version": "1.0.0",
   "description": "An example development environment setup to build Keycloak themes",
   "scripts": {
-    "build:tailwind-example:dev": "tailwindcss -i ./styles/styles.css -o ./themes/tailwind-example/resources/css/styles.css --watch",
-    "build:tailwind-example": "NODE_ENV=production tailwindcss -i ./styles/styles.css -o ./themes/tailwind-example/resources/css/styles.css --minify",
+    "build:tailwind-example:dev": "npx @tailwindcss/cli -i ./styles/styles.css -o ./themes/tailwind-example/resources/css/styles.css --watch",
+    "build:tailwind-example": "NODE_ENV=production npx @tailwindcss/cli -i ./styles/styles.css -o ./themes/tailwind-example/resources/css/styles.css --minify",
+    "build:mlg:dev": "npx @tailwindcss/cli -i ./styles/styles.css -o ./themes/mlg/login/resources/css/styles.css --watch",
+    "build:mlg": "NODE_ENV=production npx @tailwindcss/cli -i ./styles/styles.css -o ./themes/mlg/login/resources/css/styles.css --minify",
     "prettify": "prettier --write '**/*.{js,jsx}'",
     "prepare": "husky install"
   },
@@ -33,7 +35,10 @@
     "@tailwindcss/forms": "^0.5.0",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
-    "prettier": "^2.6.2",
-    "tailwindcss": "^3.0.23"
+    "prettier": "^2.6.2"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.6",
+    "tailwindcss": "^4.0.6"
   }
 }

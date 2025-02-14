@@ -12,10 +12,10 @@ rm -rf ${DIR}/../themes/keycloak-provided-themes
 mkdir -p ${DIR}/../themes/keycloak-provided-themes
 
 # Determine the name of the JAR file
-JAR_FILE="org.keycloak.keycloak-themes-24.0.2.jar"
+JAR_FILE="org.keycloak.keycloak-themes-26.1.2.jar"
 
 # Determine the Container ID of the running Keycloak container
-CONTAINER_ID=$(docker ps | grep quay.io/keycloak/keycloak:24.0.2 | awk '{print $1}')
+CONTAINER_ID=$(docker ps | grep quay.io/keycloak/keycloak:26.1.2 | awk '{print $1}')
 
 # Copy the JAR file from the container to the target directory
 docker cp ${CONTAINER_ID}:/opt/keycloak/lib/lib/main/${JAR_FILE} ${DIR}/../themes/keycloak-provided-themes
